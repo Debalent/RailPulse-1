@@ -1,0 +1,10 @@
+/* responsive.css placeholder */
+/* Add media queries and styles for mobile/tablet support */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .dashboard {
+    flex-direction: column;
+  }
+}
