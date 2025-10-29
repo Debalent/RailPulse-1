@@ -1,14 +1,29 @@
-// AuditService placeholder
+// AuditService for production
 package com.railpulse.service;
-import java.util.ArrayList;
+import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.railpulse.model.AuditLog;
+import com.railpulse.repository.AuditLogRepository;
 import java.util.List;
 
+@Service
 public class AuditService {
-    private List<String> logs = new ArrayList<>();
-    public void logAction(String action) {
-        logs.add(System.currentTimeMillis() + ": " + action);
+    @Autowired
+    private AuditLogRepository auditLogRepository;
+
+    public void logAction(String action, String user) {
+        AuditLog log = new AuditLog();
+        log.setTimestamp(System.currentTimeMillis());
+        log.setAction(action);
+        log.setUser(user);
+        auditLogRepository.save(log);
     }
-    public List<String> getLogs() {
-        return logs;
+
+    public List<AuditLog> getLogs() {
+        return auditLogRepository.findAll();
+    }
+
+    public List<AuditLog> getLogsByUser(String user) {
+        return auditLogRepository.findByUser(user);
     }
 }

@@ -1,10 +1,36 @@
-/* responsive.css placeholder */
-/* Add media queries and styles for mobile/tablet support */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
+/* responsive.css for production mobile responsiveness */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
   .dashboard {
     flex-direction: column;
+    gap: 8px;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  .dashboard, .component {
+    width: 100%;
+    padding: 8px;
+  }
+  button {
+    font-size: 1em;
+    padding: 8px 12px;
   }
 }

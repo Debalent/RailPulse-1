@@ -1,3 +1,38 @@
+## Informational Docs for Viewers & Investors
+
+### How to Navigate the Platform
+
+1. **Login & User Roles:**
+    - Start at the login page. Roles (admin, operator, maintenance) determine access to features.
+2. **Dashboard Overview:**
+    - The main dashboard provides real-time sensor data, alerts, analytics, and equipment status.
+3. **Equipment Details:**
+    - Click on any equipment to view detailed sensor history, maintenance timeline, and risk analysis.
+4. **Maps:**
+    - Use the interactive map to visualize equipment locations and operational status.
+5. **Reporting & Export:**
+    - Generate and download PDF/CSV reports for health, maintenance, and risk.
+6. **White-label Configuration:**
+    - Access the settings panel to customize branding and toggle features for different clients.
+7. **API Documentation:**
+    - Explore the Swagger UI for all backend endpoints and integration options.
+
+### Business Justification & Need for RailPulse
+
+- **Safety & Reliability:**
+  - Predictive maintenance and real-time alerts reduce downtime and prevent accidents.
+- **Operational Efficiency:**
+  - Data-driven insights optimize resource allocation and maintenance scheduling.
+- **Cost Savings:**
+  - Early detection of issues lowers repair costs and extends equipment life.
+- **Scalability:**
+  - Modular, white-label architecture adapts to any rail operator’s needs.
+- **Compliance & Transparency:**
+  - Audit logging and reporting support regulatory compliance and stakeholder trust.
+- **Competitive Advantage:**
+  - Advanced analytics and IoT integration position operators at the forefront of rail technology.
+
+RailPulse is designed to deliver measurable ROI, improve safety, and enable digital transformation for railroad operations. For demos, partnership, or investment inquiries, contact the RailPulse team.
 
 ## Navigation Guide
 
